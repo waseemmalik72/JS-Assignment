@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 12-13</title>
+</head>
+
+<body>
+    <h1>If_Else_ElseIf statement_And Set of Conditions</h1>
+
+
+    <script>
+        // Q no 1 
+//         Write a program to check whether the given input number is
+// divisible by 3 or else show a message “Number is not divisible
+// by 3”
+
+        var inputNumber = parseInt(prompt("Enter a number: "));
+
+        if (inputNumber % 3 === 0) {
+            alert("The number is divisible by 3");
+        }
+        else {
+            alert("Number is not divisible by 3");
+        };
+
+
+        // Q no 2 
+//         Write a program that checks whether the given input is an even
+// number or an odd number.
+
+        var number = prompt("input a number");
+
+        if(number % 2 === 0){
+            alert("The number is even");
+        }
+        else{
+            alert("The number is odd")
+        };
+
+        // Q no 3 
+//         Write an if/else statement with the following condition:
+// If the variable age is greater than 18, output "Old enough",
+// otherwise output "Too young".
+
+
+        var age = prompt("Enter Your Age")
+
+        if(age>18){
+            alert("Old Enough");
+        }
+        else{
+            alert("To Young");
+        };
+
+        // Q no 4 
+//         Write a program that prompts the user for their name, and then
+// displays a special greeting to that person if their name is the
+// same as yours. If the name entered by the user is anything
+// other than your name, your code should not produce any
+// output.
+
+        var name = prompt("What is your name?");
+        var myName = "waseem";
+
+        if (name === myName) {
+            alert("Hello, " + name + "! It's great to see you again.");
+        }
+        else{
+            alert("Your Code should not be produce");
+        };
+
+        // Q no 5 
+//         Write a program to check whether the given input number is
+// divisible by 3 or not by using Switch Case statements. Show a
+// message “Number is not divisible by 3” or “Number is divisible
+// by 3”.
+
+        var number = prompt("Enter your number");
+
+        switch (number % 3 ) {
+            case 0:
+                alert("Number is divisible by 3")
+                break;
+        
+            default:
+                alert("Number is not divisible by 3");
+                break;
+        };
+
+
+    </script>
+</body>
+
+</html>

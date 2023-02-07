@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 8-11</title>
+
+</head>
+
+<body>
+    <h1>User Input & Conditional Statement:</h1>
+
+
+
+
+    <script>
+        // Q No #1 
+//         Write a program that takes input a name from user & greet the
+// user like this: 
+        var name = prompt("Please enter your name");
+        if (name === "John Doe") {
+            alert("Hi " + name);
+        }
+        else {
+            alert("Hello " + name);
+        };
+
+
+
+        // Q No #2 
+//         Write a program to take input a number from user & display
+// it’s multiplication table on your browser. If user does not enter
+// a new number, multiplication table of 5 should be displayed by
+// default
+        let userInput = prompt("Enter a number to print its multiplication number):");
+
+        if (!userInput) {
+            userInput = 5;
+        }
+
+        // Display the results
+        document.write("<h1>Multiplication Table Here</h1>");
+        document.write(userInput + " x 1 = " + (userInput * 1) + "<br>");
+        document.write(userInput + " x 2 = " + (userInput * 2) + "<br>");
+        document.write(userInput + " x 3 = " + (userInput * 3) + "<br>");
+        document.write(userInput + " x 4 = " + (userInput * 4) + "<br>");
+        document.write(userInput + " x 5 = " + (userInput * 5) + "<br>");
+        document.write(userInput + " x 6 = " + (userInput * 6) + "<br>");
+        document.write(userInput + " x 7 = " + (userInput * 7) + "<br>");
+        document.write(userInput + " x 8 = " + (userInput * 8) + "<br>");
+        document.write(userInput + " x 9 = " + (userInput * 9) + "<br>");
+        document.write(userInput + " x 10 = " + (userInput * 10) + "<br>");
+
+        // Q No #3 
+//         Write a program to take “city” name as input from user. If user
+// enters “Karachi”, welcome the user like this: “Welcome to city
+// of lights”
+
+        var city = prompt("Please enter your city");
+        if (city === "karachi") {
+            alert("Welcome to city of Lights ");
+        }
+        else {
+            alert("Hello " + city);
+        };
+
+        // Q No #4 
+//         Write a program to take “gender” as input from user. If the
+// user is male, give the message: Good Morning Sir. If the user is
+// female, give the message: Good Morning Ma’am
+
+        var gender = prompt("Type Your Gender (male/female)");
+
+        if (gender == "male") {
+            alert("Good Morning Sir");
+        }
+        else if (gender == "female") {
+            alert("Good Morning Ma'am");
+        }
+        else {
+            alert("invalid gender");
+        };
+
+
+        // Q no #5 
+//         Write a program to take input max age & current age from
+// user. If the current age is less than or equal to max age, show the message “You are welcome”
+        var age = prompt("Type Your Age");
+
+        if (age >= 18 && age <= 28) {
+            alert("You are welcome");
+        }
+        else if (age > 28) {
+            alert("Type Your valid age")
+        }
+        else {
+            alert("Sorry Your Age is Too Short");
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
